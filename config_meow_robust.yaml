@@ -1,0 +1,17 @@
+seed: 2
+env_id: "AntRandom-v5"
+total_timesteps: 2500000
+buffer_size: 1000000
+gamma: 0.99
+tau: 0.0001
+batch_size: 256
+learning_start_step: 5000
+q_lr: 0.001
+noise_clip: 0.5
+alpha: 0.05
+grad_clip: 30
+log_sigma_max: -0.3
+log_sigma_min: -5.0
+noise_factor: action
+noise_type: gauss
+llm_disturb_interval: 500
