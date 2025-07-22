@@ -29,7 +29,7 @@ In this project, I benchmarked performance against baseline RL policies and anal
 
 ![Disruptions to the reward](./plots/AntRandomReward.svg)
 
-All experimental results are reproducible via scripts in this repo. See [Reproducing Figures](#reproducing-figures).
+Steps measured in units of 1e5. All experimental results are reproducible via scripts in this repo. See [Reproducing Figures](#reproducing-figures).
 
 ## Dependencies and Installation
 
