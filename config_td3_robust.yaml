@@ -1,4 +1,4 @@
-seed: 1
+seed: 3
 env_id: "AntRandom-v5"
 total_timesteps: 2500000
 learning_rate: 0.001
@@ -12,6 +12,6 @@ exploration_noise: 0.1
 policy_frequency: 2
 noise_clip: 0.5
 description: ""
-noise_factor: state
+noise_factor: action
 noise_type: gauss
 llm_disturb_interval: 500

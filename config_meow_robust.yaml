@@ -1,4 +1,4 @@
-seed: 2
+seed: 3
 env_id: "AntRandom-v5"
 total_timesteps: 2500000
 buffer_size: 1000000
@@ -12,6 +12,6 @@ alpha: 0.05
 grad_clip: 30
 log_sigma_max: -0.3
 log_sigma_min: -5.0
-noise_factor: action
+noise_factor: state
 noise_type: gauss
 llm_disturb_interval: 500
