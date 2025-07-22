@@ -23,11 +23,11 @@ In this project, I benchmarked performance against baseline RL policies and anal
 
 ## Findings
 
-![Disruptions to the state](./plots/AntRandomState.png)
+![Disruptions to the state](./plots/AntRandomState.svg)
 
-![Disruptions to the action](./plots/AntRandomAction.png)
+![Disruptions to the action](./plots/AntRandomAction.svg)
 
-![Disruptions to the reward](./plots/AntRandomReward.png)
+![Disruptions to the reward](./plots/AntRandomReward.svg)
 
 All experimental results are reproducible via scripts in this repo. See [Reproducing Figures](#reproducing-figures).
 
@@ -88,7 +88,7 @@ If you use this project, please consider citing the foundational work:
 - **Eysenbach, B., & Levine, S.**  
   _Maximum Entropy RL (Provably) Solves Some Robust RL Problems_  
   ICLR 2022.  
-  [arXiv:2103.06257](https://arxiv.org/abs/2103.06257), [DOI: 10.48550/arXiv.2103.06257](https://doi.org/10.48550/arXiv.2103.06257)
+  [arXiv:2103.06257](https://arxiv.org/abs/2103.06257)
 
   > This paper provides the first formal proof that MaxEnt RL maximizes a lower bound on a robust RL objective, showing that MaxEnt RL inherently offers robustness to certain types of disturbances—without requiring additional algorithmic components.
 
