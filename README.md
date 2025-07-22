@@ -1,4 +1,14 @@
-# Evaluating Robustness of MEow (NVIDIA Research, NeurIPS 2024) Under Real-World Noisy Conditions
+# Evaluating Robustness of MEow RL (NVIDIA Research, NeurIPS 2024) Under Real-World Noisy Conditions
+
+Quick Reference:
+- [**About**](#about)
+- [**Findings**](#findings)
+- [**Dependencies and Installation**](#dependencies-and-installation)
+- [**Running Experiments**](#running-experiments)
+- [**Reproducing Figures**](#reproducing-figures)
+- [**Acknowledgements**](#acknowledgements)
+- [**References**](#references)
+- [**Issues & Feedback**](#issues--feedback)
 
 ## About
 
@@ -19,18 +29,17 @@ In this project, I benchmarked performance against baseline RL policies and anal
 
 ![Disruptions to the reward](./plots/AntRandomReward.png)
 
-All experimental results are reproducible via scripts in this repo. Raw output data can be found under the `/runs` directory.
+All experimental results are reproducible via scripts in this repo. See [Reproducing Figures](#reproducing-figures).
 
 ## Dependencies and Installation
 
-- Python >= 3.11.9
+- Python 3.9
 - [Robust Gymnasium](https://github.com/SafeRL-Lab/Robust-Gymnasium)
-- Other required packages in `requirements.txt`
 
 Clone and enter the repository:
 ```bash
 git clone https://github.com/sophiebroderick/RobustMEow
-cd MEow_Robust
+cd RobustnessMEow
 ```
 
 Create and activate a new environment:
@@ -51,23 +60,18 @@ Both MEow and TD3 have been modified to output logs compatible with Robust Gym. 
 
 **Example:** Run MEow on `AntRandom-v5`:
 ```bash
-python meow_ours_robust.py --config "config_meow_robust.yaml"
+python meow_robust.py --config "config_meow_robust.yaml"
 ```
 
 **Example:** Run TD3 on `AntRandom-v5`:
 ```bash
-python td3_ours_robust.py --config "config_td3_robust.yaml"
+python td3_robust.py --config "config_td3_robust.yaml"
 ```
 
 ## Reproducing Figures
 
 All raw data for figures can be found in the `/runs` directory.
-
-To reproduce the evaluation plots:
-```bash
-python scripts/plot_robustness.py --data_dir ./runs --save_path ./figures/
-```
-This will generate the plots used in our results section, including performance under perturbations across tasks and algorithms.
+To reproduce the evaluation plots run quick_plotter.py in the '/plots' directory
 
 ## Acknowledgements
 
@@ -76,8 +80,6 @@ This work builds on the following major libraries:
 - [MEOw](https://github.com/ChienFeng-hub/meow) — Energy-Based Flows for MaxEnt RL (Forked and extended)
 - [Robust Gymnasium](https://github.com/SafeRL-Lab/Robust-Gymnasium) — MuJoCo tasks with realistic noise and perturbation benchmarks
 - [TD3 Baseline](https://github.com/vwxyzjn/cleanrl) — My TD3 variant is adapted from this implementation (Forked and extended)
-
-We are grateful to these open-source communities for enabling our research.
 
 ## References
 
@@ -99,5 +101,5 @@ If you use this project, please consider citing the foundational work:
 
 ## Issues & Feedback
 
-Found a bug? Want to request a feature or share your results?  
-Please open an issue here: [GitHub Issues](https://github.com/sophiebroderick/RobustMEow/issues)
+Found a bug? Want to make a request or share your results?  
+Please open an issue here: [GitHub Issues](https://github.com/SophieBroderick/RobustnessMEow/issues)
