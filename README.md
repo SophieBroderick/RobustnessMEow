@@ -1,14 +1,14 @@
 # Evaluating Robustness of MEow RL (NVIDIA Research, NeurIPS 2024) Under Real-World Noisy Conditions
 
-Quick Reference:
-- [**About**](#about)
-- [**Findings**](#findings)
-- [**Dependencies and Installation**](#dependencies-and-installation)
-- [**Running Experiments**](#running-experiments)
-- [**Reproducing Figures**](#reproducing-figures)
-- [**Acknowledgements**](#acknowledgements)
-- [**References**](#references)
-- [**Issues & Feedback**](#issues--feedback)
+##### Quick Reference:
+| [About](#about)
+| [Findings](#findings)
+| [Dependencies and Installation](#dependencies-and-installation)
+| [Running Experiments](#running-experiments)
+| [Reproducing Figures](#reproducing-figures)
+| [Acknowledgements](#acknowledgements)
+| [References](#references)
+| [Issues & Feedback](#issues--feedback)
 
 ## About
 
@@ -71,7 +71,7 @@ python td3_robust.py --config "config_td3_robust.yaml"
 ## Reproducing Figures
 
 All raw data for figures can be found in the `/runs` directory.
-To reproduce the evaluation plots run quick_plotter.py in the '/plots' directory
+To reproduce the evaluation plots run quick_plotter.py in the `/plots` directory
 
 ## Acknowledgements
 
