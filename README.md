@@ -12,7 +12,7 @@
 
 ## About
 
-This project evaluates the robustness of Maximum Entropy Reinforcement Learning (MaxEnt RL) via Energy-Based Normalizing Flows (EBFlow). While RL algorithms are typically tested in clean, idealized simulations, this work introduces realistic disturbances—including sensor corruption, action noise, and observation noise—using tools from the Robust Gym benchmark to assess generalization. 
+This project evaluates the robustness of Maximum Entropy Reinforcement Learning (MaxEnt RL) via Energy-Based Normalizing Flows (EBFlow). While RL algorithms are typically tested in clean, idealized simulations, this work introduces realistic disturbances including sensor corruption, action noise, and observation noise using tools from the Robust Gym benchmark to assess generalization. 
 
 In this project, I benchmarked performance against baseline RL policies and analyzed performance degradation and stability across perturbation regimes. By applying rigorous robustness tests to state-of-the-art methods, the project highlights key challenges and explores applicability in realistic and safety-critical control settings, informing efforts toward safe, reliable deployment in the real world.
 
